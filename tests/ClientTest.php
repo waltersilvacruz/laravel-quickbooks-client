@@ -1,6 +1,6 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace WebDEV\QuickBooks;
 
 use Mockery;
 use Mockery\Mock;
@@ -10,7 +10,7 @@ use QuickBooksOnline\API\Exception\ServiceException;
 /**
  * Class ClientTest
  *
- * @package Spinen\QuickBooks
+ * @package WebDEV\QuickBooks
  */
 class ClientTest extends TestCase
 {

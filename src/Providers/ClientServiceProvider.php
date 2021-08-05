@@ -1,15 +1,15 @@
 <?php
 
-namespace Spinen\QuickBooks\Providers;
+namespace WebDEV\QuickBooks\Providers;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use Spinen\QuickBooks\Client;
+use WebDEV\QuickBooks\Client;
 
 /**
  * Class ClientServiceProvider
  *
- * @package Spinen\QuickBooks
+ * @package WebDEV\QuickBooks
  */
 class ClientServiceProvider extends LaravelServiceProvider
 {

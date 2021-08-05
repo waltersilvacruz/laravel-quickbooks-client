@@ -1,17 +1,17 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace WebDEV\QuickBooks;
 
 use Carbon\Carbon;
 use Mockery;
 use QuickBooksOnline\API\Core\OAuth\OAuth2\OAuth2AccessToken;
-use Spinen\QuickBooks\Stubs\TokenStub;
-use Spinen\QuickBooks\Stubs\User;
+use WebDEV\QuickBooks\Stubs\TokenStub;
+use WebDEV\QuickBooks\Stubs\User;
 
 /**
  * Class TokenTest
  *
- * @package Spinen\QuickBooks
+ * @package WebDEV\QuickBooks
  */
 class TokenTest extends TestCase
 {
@@ -191,7 +191,7 @@ class TokenTest extends TestCase
      */
     public function it_get_related_user_model_from_configuration()
     {
-        $this->assertEquals('App\User,user_id,id', $this->token->user());
+        $this->assertEquals('App\Databases\Models\User,user_id,id', $this->token->user());
     }
 }
 
@@ -202,6 +202,6 @@ function config($key)
             'foreign' => 'user_id',
             'owner'   => 'id',
         ],
-        'model' => 'App\User',
+        'model' => 'App\Databases\Models\User',
     ];
 }

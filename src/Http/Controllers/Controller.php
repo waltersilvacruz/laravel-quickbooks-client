@@ -1,18 +1,18 @@
 <?php
 
-namespace Spinen\QuickBooks\Http\Controllers;
+namespace WebDEV\QuickBooks\Http\Controllers;
 
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Contracts\View\Factory as ViewFactory;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as LaravelController;
 use Illuminate\Routing\Redirector;
-use Spinen\QuickBooks\Client as QuickBooks;
+use WebDEV\QuickBooks\Client as QuickBooks;
 
 /**
  * Class Controller
  *
- * @package Spinen\QuickBooks
+ * @package WebDEV\QuickBooks
  */
 class Controller extends LaravelController
 {

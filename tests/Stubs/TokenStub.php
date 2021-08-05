@@ -1,15 +1,15 @@
 <?php
 
-namespace Spinen\QuickBooks\Stubs;
+namespace WebDEV\QuickBooks\Stubs;
 
-use Spinen\QuickBooks\Token;
+use WebDEV\QuickBooks\Token;
 
 /**
  * Class TokenStub
  *
  * Stub for a Laravel Token model
  *
- * @package Spinen\QuickBooks\Stubs
+ * @package WebDEV\QuickBooks\Stubs
  */
 class TokenStub extends Token
 {

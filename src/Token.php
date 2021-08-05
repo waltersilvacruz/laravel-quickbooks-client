@@ -1,8 +1,8 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace WebDEV\QuickBooks;
 
-use App\User;
+use App\Databases\Models\User;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
@@ -13,7 +13,7 @@ use QuickBooksOnline\API\Exception\SdkException;
 /**
  * Class Token
  *
- * @package Spinen\QuickBooks
+ * @package WebDEV\QuickBooks
  *
  * @property boolean $hasValidAccessToken Is the access token valid
  * @property boolean $hasValidRefreshToken Is the refresh token valid

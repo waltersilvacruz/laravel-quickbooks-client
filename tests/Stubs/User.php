@@ -1,15 +1,15 @@
 <?php
 
-namespace Spinen\QuickBooks\Stubs;
+namespace WebDEV\QuickBooks\Stubs;
 
-use Spinen\QuickBooks\HasQuickBooksToken;
+use WebDEV\QuickBooks\HasQuickBooksToken;
 
 /**
  * Class User
  *
  * Stub for a Laravel User model
  *
- * @package Spinen\QuickBooks\Stubs
+ * @package WebDEV\QuickBooks\Stubs
  */
 class User
 {

@@ -15,11 +15,8 @@ class CreateQuickBooksTokensTable extends Migration
     public function up()
     {
         Schema::create('quickbooks_tokens', function (Blueprint $table) {
-            $user_id_type = DB::getSchemaBuilder()
-                              ->getColumnType('users', 'id') === 'bigint' ? 'unsignedBigInteger' : 'unsignedInteger';
-
             $table->bigIncrements('id');
-            $table->{$user_id_type}('user_id');
+            $table->uuid('user_id');
             $table->unsignedBigInteger('realm_id');
             $table->longtext('access_token');
             $table->datetime('access_token_expires_at');
@@ -29,8 +26,8 @@ class CreateQuickBooksTokensTable extends Migration
             $table->timestamps();
 
             $table->foreign('user_id')
-                  ->references('id')
                   ->on('users')
+                  ->references('id')
                   ->onDelete('cascade');
         });
     }

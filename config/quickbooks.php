@@ -1,6 +1,6 @@
 <?php
 
-use App\User;
+use App\Databases\Models\User;
 
 return [
 
@@ -25,8 +25,8 @@ return [
     'data_service' => [
         'auth_mode'     => 'oauth2',
         'base_url'      => env('QUICKBOOKS_API_URL', config('app.env') === 'production' ? 'Production' : 'Development'),
-        'client_id'     => env('QUICKBOOKS_CLIENT_ID'),
-        'client_secret' => env('QUICKBOOKS_CLIENT_SECRET'),
+        'client_id'     => config('app.env') === 'production' ? env('QUICKBOOKS_CLIENT_ID') : env('QUICKBOOKS_SANDBOX_CLIENT_ID'),
+        'client_secret' => config('app.env') === 'production' ? env('QUICKBOOKS_CLIENT_SECRET') : env('QUICKBOOKS_SANDBOX_CLIENT_SECRET'),
         'scope'         => 'com.intuit.quickbooks.accounting',
     ],
 

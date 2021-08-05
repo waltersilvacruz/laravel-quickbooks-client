@@ -1,13 +1,13 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace WebDEV\QuickBooks;
 
-use Spinen\QuickBooks\Stubs\User;
+use WebDEV\QuickBooks\Stubs\User;
 
 /**
  * Class HasQuickBooksTokenTest
  *
- * @package Spinen\QuickBooks
+ * @package WebDEV\QuickBooks
  */
 class HasQuickBooksTokenTest extends TestCase
 {

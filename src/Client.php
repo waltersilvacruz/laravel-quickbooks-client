@@ -1,6 +1,6 @@
 <?php
 
-namespace Spinen\QuickBooks;
+namespace WebDEV\QuickBooks;
 
 use Exception;
 use QuickBooksOnline\API\DataService\DataService;
@@ -11,7 +11,7 @@ use QuickBooksOnline\API\ReportService\ReportService;
 /**
  * Class Client
  *
- * @package Spinen\QuickBooks
+ * @package WebDEV\QuickBooks
  */
 class Client
 {
