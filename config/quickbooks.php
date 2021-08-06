@@ -42,7 +42,6 @@ return [
 
     'logging' => [
         'enabled' => env('QUICKBOOKS_DEBUG', config('app.debug')),
-
         'location' => storage_path('logs'),
     ],
 
@@ -74,6 +73,18 @@ return [
         ],
         'prefix'     => 'quickbooks',
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Properties to configure the redirect route after disconnect
+    |--------------------------------------------------------------------------
+    |
+    | You can set a default route name to be redirected after disconnecting
+    | from QuickBooks.
+    |
+    */
+
+    'redirect_route' => env('QUICKBOOKS_REDIRECT_ROUTE'),
 
     /*
     |--------------------------------------------------------------------------

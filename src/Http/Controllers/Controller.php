@@ -59,7 +59,11 @@ class Controller extends LaravelController
 
         $request->session()->flash('success', 'Disconnected from QuickBooks');
 
-        return $redirector->back();
+        if(config('quickbooks.redirect_route')) {
+            return response()->redirectTo(route(config('quickbooks.redirect_route')));
+        } else {
+            return $redirector->back();
+        }
     }
 
     /**

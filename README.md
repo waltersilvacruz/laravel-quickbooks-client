@@ -59,6 +59,7 @@ class User extends Authenticatable
     ```bash
     QUICKBOOKS_API_URL=<Development|Production> # Defaults to App's env value
     QUICKBOOKS_DEBUG=<true|false>               # Defaults to App's debug value
+    QUICKBOOKS_REDIRECT_ROUTE=<string>          # A named route to force redirect after disconnecting
     ```
 
 3. _[Optional]_ Publish configs & views
